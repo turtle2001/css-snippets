@@ -1,13 +1,13 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-:root{
+:root {
     --header-color: blue;
     --text-color: white;
 }
 
-body{
+body {
     display: flex;
     background-color: gray;
     font-family: 'Times New Roman', Times, serif;
@@ -16,12 +16,12 @@ body{
     justify-content: flex-start;
 }
 
-header{
+header {
     padding: 40px;
     text-align: center;
 }
 
-h1{
+h1 {
     color: var(--header-color);
 }
 
@@ -29,30 +29,31 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-  }
-  
+}
+
 
 .snippet{
     flex: 0 0 400px;
     padding: 20px;
     border: 2px solid black;
+    transition: font-size 4s 1s;
 }
 
-.snippet p:active{
-    color: red;
+.snippet:hover{
+    font-size: 36px;
+}
+
+.all {
+    -webkit-user-select: all;
+    -ms-user-select: all;
+    user-select: all;
 }
 
 
+@media screen and (max-width: 992px){
 
-@media screen and (max-width: 992px) {
+}
 
-  }
-  
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {}
 
-  }
-
-@media screen and (max-width: 576px) {
-
-  }
-  
+@media screen and (max-width: 576px) {}
