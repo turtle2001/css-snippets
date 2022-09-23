@@ -25,15 +25,22 @@ h1{
     color: var(--header-color);
 }
 
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+
 .snippet{
-    flex: 1 0 200px;
-    padding: 10px;
-    text-align: center;
-    border-style: solid;
-    border-width: 1px;
+    flex: 0 0 400px;
+    padding: 20px;
+    border: 2px solid black;
 }
 
-
+.snippet p:active{
+    color: red;
+}
 
 
 
