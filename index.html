@@ -11,39 +11,84 @@
 <body>
     <header>
         <h1>CSS Snippet Cheatsheet</h1>
-        <section>
-            <p>text</p>
-        </section>
+        <p>Ever have trouble recalling the exact syntax for your favorite CSS code? Give it a permanent home and add it to this page! Select any snippet below and it'll automatically select all of the code for you to copy.</p>
     </header>
 
     <main>
-        <section id="row" class="snippet">
-            <h1>Flexox Row</h1>
-            <p class="all">.row{code snippet}</p>
+        <section class="snippet">
+            <h3>Use these three properties to create a flexbox row layout.</h3>
+            <pre>
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+            </pre>
         </section>
-        <section id="column" class="snippet">
-            <h1>FlexBox Column</h1>
-            <p class="all">.column{code snippet}</p>
+
+        <section class="snippet">
+            <h3>Flexbox Column</h3>
+            <pre>
+.column{
+    display: flex;
+    flex-direction: column;
+}
+            </pre>
         </section>
-        <section id="gridlayout" class="snippet">
-            <h1>CSS Grid Layout</h1>
-            <p class="all">.girdlayout{code snippet}</p>
+
+        <section class="snippet">
+            <h3>CSS Grid Layout</h3>
+            <pre>
+.grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns:
+    repeat(12, 1fr);
+}
+            </pre>
         </section>
-        <section id="Linear" class="snippet">
-            <h1>Linear Gradients</h1>
-            <p class="all">.Linear Gradients{code snippet}</p>
+
+        <section class="snippet">
+            <h3>Linear Gradients</h3>
+            <pre>
+.linear-gradient-background{
+    background-image: linear-gradient(
+    rgba(232, 102, 236, 0.3) 0%,
+    rgba(232, 102, 236, 0.6) 100%):
+}
+            </pre>
         </section>
-        <section id="Glow" class="snippet">
-            <h1>Box Transition Glow</h1>
-            <p class="all">glow{code snippet}</p>
+
+        <section class="snippet">
+            <h3>Box Transition Glow</h3>
+            <pre>
+.pre-card .card-header{
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+.pre-card:hover .card-header{
+    box-shadow: inset 0px 0px 8px
+    rgba(232, 102, 236, 1), 0 0 15px
+    rgba(232, 102, 236, 1);
+}
+            </pre>
         </section>
-        <section id="title" class="snippet">
-            <h1>Overlay Card with Title</h1>
-            <p class="all">.title{code snippet}</p>
+
+        <section class="snippet">
+            <h3>Overlay Card with Title</h3>
+            <pre>
+.card-header{
+    position: relative;
+    margin-top: -20px;
+}
+            </pre>
         </section>
     </main>
 
-
+    <footer>
+        <h3>
+            Made with &#x2764; and CSS
+        </h3>
+    </footer>
 </body>
-
 </html>
