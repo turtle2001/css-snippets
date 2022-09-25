@@ -28,14 +28,19 @@ h1{
     color: var(--header-color);
 }
 
+h1:hover{
+    color:blueviolet;
+    transition: color 0.5s ease;
+}
+
 main{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-evenly
 }
 
 .snippet{
-    border-style: solid;
+    border-style: dashed;
     border-color: var(--text-color);
     border-width: 1px;
     width: calc((100% - 6* var(--margin-size))/3);
@@ -44,24 +49,24 @@ main{
     color: var(--alternate-color);
 }
 
-.snippet h2 {
+.snippet h2{
     position: relative;
     margin-top: -20px;
-    border-style: solid;
-    border-color: var(--text-color);
-    border-radius: 5px;
-    background-color: var(--header-backgroud);
-    border-width: 1px;
-    padding: 3px;
+    font-size: 200%;
+    text-align: center;
+    font-weight: bolder;
+    border: 2px solid ;
 }
 
 pre{
     color: var(--text-color);
     font-family:'Courier New', Courier, monospace;
     padding: 0px;
+    font-size: 125%;
     -webkit-user-select: all;
     -ms-user-select: all;
     user-select: all;
+    background-image: linear-gradient(rgba(2,0,36,1) 0%, rgba(85,85,147,1) 35%, rgba(0,212,255,1) 100%);
 }
 
 footer{
@@ -69,16 +74,4 @@ footer{
     padding: 20px;
     text-align: center;
     color: var(--header-color);
-}
-
-@media screen and (max-width: 992px){
-
-}
-
-@media screen and (max-width: 768px){
-
-}
-
-@media screen and (max-width: 576px){
-
 }
