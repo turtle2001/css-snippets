@@ -6,14 +6,15 @@
 :root{
     --header-color: blue;
     --text-color: white;
-    --margin-size: 10px;
+    --background-color: gray;
+    --margin-size: 20px;
 }
 
 
 body{
     font-size: 16px;
     display: flex;
-    background-color: gray;
+    background-color: var(--background-color);
     color: var(--text-color);
     flex-direction: column;
     justify-content: center;
@@ -40,29 +41,30 @@ main{
 }
 
 .snippet{
-    border-style: dashed;
-    border-color: var(--text-color);
+    position: relative;
+    border-style: solid;
+    border-color: var(--header-color);
     border-width: 1px;
     width: calc((100% - 6* var(--margin-size))/3);
     padding: 20px;
     margin: var(--margin-size);
-    color: var(--alternate-color);
 }
 
 .snippet h2{
     position: relative;
-    margin-top: -20px;
+    margin-top: -40px;
     font-size: 200%;
+    color: var(--header-color);
     text-align: center;
     font-weight: bolder;
-    border: 2px solid ;
+    border: 2px solid;
+    background: var(--background-color);
 }
 
-pre{
+.snippet pre{
     color: var(--text-color);
     font-family:'Courier New', Courier, monospace;
     padding: 0px;
-    font-size: 125%;
     -webkit-user-select: all;
     -ms-user-select: all;
     user-select: all;
@@ -74,4 +76,16 @@ footer{
     padding: 20px;
     text-align: center;
     color: var(--header-color);
+}
+
+@media screen and (max-width: 992px){
+    .snippet{
+        width: 40%;
+    }
+}
+  
+@media screen and(max-width: 528px){
+    .snippet{
+      width: 60%;
+    }
 }
